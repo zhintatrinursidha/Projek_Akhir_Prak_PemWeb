@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/functions.php';
-$base_url = '/projek';
+$base_url = '/proyekakhir/Projek_Akhir_Prak_PemWeb/projek';
 if (!isset($judul)) {
     $judul = 'PustakaKu';
 }

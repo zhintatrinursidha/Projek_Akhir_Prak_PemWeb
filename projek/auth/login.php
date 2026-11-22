@@ -4,7 +4,7 @@ include '../config/koneksi.php';
 include '../includes/auth_check.php';
 
 if(isset($_SESSION['login'])) {
-    if($_SESSION(['role'] == 'admin')) {
+    if($_SESSION['role'] == 'admin') {
         header("Location: ../admin/dashboard.php");
     } else {
         header("Location: ../anggota/dashboard.php");

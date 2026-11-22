@@ -12,7 +12,7 @@ if(!isset($_SESSION['login']) && isset($_COOKIE['remember'])) {
     mysqli_stmt_execute($query);
     $result = mysqli_stmt_get_result($query);
 
-    if(mysqli_num_roes($result) == 1) {
+    if(mysqli_num_rows($result) == 1) {
         $user = mysqli_fetch_assoc($result);
 
         session_regenerate_id(true);
@@ -30,7 +30,7 @@ if(!isset($_SESSION['login']) && isset($_COOKIE['remember'])) {
 
 function wajib_login() {
     if (!isset($_SESSION['login'])) {
-        header("Location: /projek/auth/login.php");
+        header("Location: /proyekakhir/Projek_Akhir_Prak_PemWeb/projek/auth/login.php");
         exit();
     }
 }
