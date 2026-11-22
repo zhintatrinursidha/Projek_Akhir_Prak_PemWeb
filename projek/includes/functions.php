@@ -58,10 +58,13 @@ function Upload_gambar($file, $folder){
 }
 
 function url_cover($cover) {
+    global $base_url;
+
     if ($cover == 'no-cover.png') {
-        return '/projek/uploads/no-cover.png';
+        return $base_url . '/uploads/no-cover.png';
     }
-    return '/projek/uploads/cover/' . $cover;
+
+    return $base_url . '/uploads/cover/' . $cover;
 }
 
 function badge_status($status) {
