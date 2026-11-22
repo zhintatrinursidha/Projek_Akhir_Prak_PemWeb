@@ -1,0 +1,200 @@
+:root {
+    --warna-utama: #1e5aa8;
+    --warna-latar: #f4f6f9;
+}
+
+body {
+    background-color: var(--warna-latar);
+}
+
+.navbar.bg-primary {
+    background: linear-gradient(135deg, #0f2b5b 0%, #1e5aa8 100%) !important;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.25);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    --bs-navbar-color: rgba(255, 255, 255, 0.95);
+    --bs-navbar-hover-color: #fff;
+    --bs-navbar-active-color: #1e5aa8;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.45rem;
+    letter-spacing: 0.5px;
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 500;
+    padding: 8px 16px;
+    margin: 0 2px;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: #fff;
+    color: #1e5aa8 !important;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link[href$="logout.php"] {
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    margin-left: 8px;
+}
+
+.navbar-nav .nav-link[href$="register.php"] {
+    margin-left: 8px;
+}
+
+.navbar-text {
+    font-weight: 600;
+    color: #fff !important;
+}
+
+.foto-nav {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+.navbar > .container {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.navbar-toggler {
+    padding: 6px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    --bs-navbar-toggler-focus-width: 2px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.35);
+}
+
+.navbar-toggler-icon {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        margin-top: 12px;
+        padding: 8px;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 2px 0;
+        padding: 10px 14px;
+    }
+
+    .navbar-nav .nav-link.active {
+        background-color: rgba(255, 255, 255, 0.22);
+        color: #fff !important;
+    }
+
+    .navbar-nav .nav-link[href$="register.php"],
+    .navbar-nav .nav-link[href$="logout.php"] {
+        margin-left: 0;
+        margin-top: 6px;
+        text-align: center;
+    }
+
+    .navbar-text {
+        margin: 10px 0 4px;
+        padding: 0 14px;
+    }
+}
+
+.card-buku {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    height: 100%;
+}
+
+.card-buku:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-buku img {
+    height: 240px;
+    object-fit: cover;
+}
+
+.kotak-auth {
+    max-width: 420px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+@media print {
+    .navbar,
+    .sidebar-admin,
+    .no-print,
+    .btn {
+        display: none !important;
+    }
+
+    body {
+        background: #fff;
+    }
+}
+
+.preview-cover {
+    width: 100%;
+    max-width: 200px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.hero {
+    background-image:
+        linear-gradient(rgba(10, 40, 90, 0.55), rgba(10, 40, 90, 0.55)),
+        url('../assets/hero.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 80px 20px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.foto-profil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #dee2e6;
+}
+
+.hanya-cetak {
+    display: none;
+}
+
+@media print {
+    .hanya-cetak {
+        display: block !important;
+    }
+
+    .area-laporan {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
