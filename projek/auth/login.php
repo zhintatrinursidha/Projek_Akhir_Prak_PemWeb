@@ -84,7 +84,7 @@ include '../includes/header.php';
         <div class mb-3>
             <label class = "form-label">Password</label>
             <div class = "input-group">
-                <input type = "password" name = "password" id = "password" class = "form-control" required>
+                <input type = "password" name = "password" id = "password" class = "form-control mb-3" required>
                 <button type = "button" class = "btn btn-outline-secondary" id = "togglePassword">Lihat</button>
             </div>
         </div>

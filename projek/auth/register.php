@@ -78,9 +78,9 @@ include '../includes/header.php';
         </div>
         <div class mb-3>
             <label class = "form-label">Konfirmasi Password</label>
-            <input type = "password" name = "konfirmasi" class = "form-control">
+            <input type = "password" name = "konfirmasi" class = "form-control mb-3">
         </div>
-        <div>
+        <div >
             <button type = "submit" name = "register" class = "btn btn-primary w-100">Daftar</button>
         </div>
     </form>
