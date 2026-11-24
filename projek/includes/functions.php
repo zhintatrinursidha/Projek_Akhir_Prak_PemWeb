@@ -24,7 +24,7 @@ function tampil_pesan(){
         $tipe = $_SESSION['pesan']['tipe'];
         $teks = bersihkan($_SESSION['pesan']['teks']);
         echo "
-        <div class='alert alert-$tipe' alert-dismissible fade show' role='alert'>$teks
+        <div class='alert alert-$tipe alert-dismissible fade show' role='alert'>$teks
             <button type = 'button' class = 'btn-close' data-bs-dismiss = 'alert'></button>
         </div>";
         unset($_SESSION['pesan']);
@@ -78,9 +78,12 @@ function badge_status($status) {
 }
 
 function url_foto($foto) {
+    global $base_url;
+
     if ($foto == 'default.png') {
-        return '/projek/uploads/default.png';
+        return $base_url . '/uploads/default.png';
     }
-    return '/projek/uploads/foto/' . $foto;
+
+    return $base_url . '/uploads/foto/' . $foto;
 }
 ?>
