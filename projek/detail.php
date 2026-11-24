@@ -33,7 +33,7 @@ include 'includes/header.php';
     <div class="alert alert-warning">Buku tidak ditemukan.</div>
     <a href="index.php" class="btn btn-primary">Kembali ke Katalog</a>
 <?php } else { ?>
-    <div class="row">
+    <div class="row ">
         <div class="col-md-4 mb-3">
             <img src="<?= url_cover($b['cover']) ?>" class="img-fluid rounded shadow-sm" alt="cover">
         </div>
